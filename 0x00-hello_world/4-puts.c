@@ -1,3 +1,9 @@
+/**
+ * main -Entry point of the program
+ * 
+ * Description: This function prints a message using puts
+ * Return: Always 0 (success)
+ */ 
 #include <stdio.h>
 int main(void)
 {
