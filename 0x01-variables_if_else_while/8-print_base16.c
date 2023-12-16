@@ -9,15 +9,16 @@
 #include <string.h>
 int main(void)
 {
-	char c;
+	int c;
+	char z;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (c = '0'; c <= '9'; c++)
 	{
 		putchar(c);
 	}
-	for (c = 'A'; c <= 'Z'; c++)
+	for (z = 'a'; z <= 'f'; z++) 
 	{
-		putchar(c);
+		putchar(z);
 	}
 	putchar('\n');
 	return (0);
