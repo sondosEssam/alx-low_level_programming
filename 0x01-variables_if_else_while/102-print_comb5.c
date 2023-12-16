@@ -22,21 +22,24 @@ int main(void)
 		{
 			for (c = z; c <= '9'; c++)
 			{
-				for (j = i + 1; j <= '9'; j++)
+				for (j = 0; j <= '9'; j++)
 				{
-					putchar(z);
-					putchar(i);
-					putchar(' ');
-					putchar(c);
-					putchar(j);
-					if (z == '9' && i == '8')
+					if (z + i < c + j)
 					{
-						r = 0;
-					}
-					if (r == 1)
-					{
-						putchar(',');
+						putchar(z);
+						putchar(i);
 						putchar(' ');
+						putchar(c);
+						putchar(j);
+						if (z == '9' && i == '8')
+						{
+							r = 0;
+						}
+						if (r == 1)
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
