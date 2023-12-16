@@ -22,7 +22,7 @@ int main(void)
 		{
 			for (c = z; c <= '9'; c++)
 			{
-				for (j = 0; j <= '9'; j++)
+				for (j = '0'; j <= '9'; j++)
 				{
 					if (z + i < c + j)
 					{
@@ -31,15 +31,15 @@ int main(void)
 						putchar(' ');
 						putchar(c);
 						putchar(j);
-						if (z == '9' && i == '8')
-						{
-							r = 0;
-						}
-						if (r == 1)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+					if (z == '9' && i == '8')
+					{
+						r = 0;
+					}
+					if (r == 1)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 					}
 				}
 			}
