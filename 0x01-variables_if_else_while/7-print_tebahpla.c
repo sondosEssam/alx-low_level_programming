@@ -1,7 +1,7 @@
 /**
  * main -Entry point of the program
  *
- * Description: prints all alphabets upper and lower V2
+ * Description: prints all alphabets
  * Return: Always 0 (success)
  */
 #include <stdlib.h>
@@ -11,11 +11,7 @@ int main(void)
 {
 	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
-	{
-		putchar(c);
-	}
-	for (c = 'A'; c <= 'Z'; c++)
+	for (c = 'z'; c >= 'a'; c--)
 	{
 		putchar(c);
 	}
