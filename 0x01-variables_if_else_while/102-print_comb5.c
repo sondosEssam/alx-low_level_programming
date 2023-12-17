@@ -24,7 +24,7 @@ int main(void)
 			{
 				for (j = '0'; j <= '9'; j++)
 				{
-					if (z + i <= c + j)
+					if (((c * 10) + j) > ((z * 10) + i))
 					{
 						putchar(z);
 						putchar(i);
