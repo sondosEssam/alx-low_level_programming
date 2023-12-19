@@ -1,3 +1,9 @@
+/**
+ * print_alphabet -Entry point
+ *
+ * Description: prints all alphabet
+ * Return: 0
+ */
 #include"main.h"
 void print_alphabet(void)
 {
