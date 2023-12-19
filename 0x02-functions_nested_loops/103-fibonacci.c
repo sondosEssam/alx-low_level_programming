@@ -16,7 +16,7 @@ int main(void)
 
 	prev = 1;
 	curr = 2;
-	sum = 0;
+	sum = 2;
 	for (c = 1; c <= 48; c++)
 	{
 		next = curr + prev;
