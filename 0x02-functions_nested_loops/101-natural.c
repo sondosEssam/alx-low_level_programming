@@ -7,7 +7,7 @@
 int main(void)
 {
 	int num;
-	long long sum;
+	long sum;
 
 	sum = 0;
 	for (num = 3; num < 1024 ; num++)
@@ -15,6 +15,6 @@ int main(void)
 		if (num % 3 == 0 || num % 5 == 0)
 			sum += num;
 	}
-	printf("%lld\n", sum);
+	printf("%ld\n", sum);
 	return (0);
 }
