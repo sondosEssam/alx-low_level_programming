@@ -25,4 +25,5 @@ int main(void)
 		curr = next;
 	}
 	putchar('\n');
+	return (0);
 }
