@@ -5,9 +5,13 @@
  * Return: 0
  */
 #include"main.h"
-void _isupper(int c)
+int _isupper(int c)
 {
+	int s;
+
 	if (c <= 90 && c >= 65)
-		return (1);
-	return (0);
+		s = 1;
+	else
+		s = 0;
+	return (s);
 }
