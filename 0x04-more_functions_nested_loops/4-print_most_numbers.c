@@ -1,7 +1,7 @@
 /**
- * print_numbers - print most numbrs
+ * print_most_numbers - print most numbrs
  *
- * Description: print nums from 0 to 9
+ * Description: print nums from 0 to 9 excpet 2,4
  * Return: void
  */
 #include"main.h"
