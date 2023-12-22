@@ -25,7 +25,7 @@ void print_triangle(int size)
 		{
 			if (i < l)
 				_putchar(' ');
-			else if ( i >= l)
+			else if (i >= l)
 				_putchar('#');
 			i++;
 		}
