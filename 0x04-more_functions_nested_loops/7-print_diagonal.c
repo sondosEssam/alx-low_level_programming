@@ -1,5 +1,5 @@
 /**
- * print_line -Entry point
+ * print_diagonal -Entry point
  * @n : num1
  * Description: check if uper or no
  * Return: 0
@@ -12,6 +12,8 @@ void print_diagonal(int n)
 
 	i = 0;
 	l = n;
+	if (n <= 0)
+		_putchar('\n');
 	while (n > 0)
 	{
 		while (i < (l - n + 1))
