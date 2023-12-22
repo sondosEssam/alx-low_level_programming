@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -7,9 +7,11 @@
  */
 int main(void)
 {
-   print_triangle(10);
-   print_triangle(-4);
-   print_triangle(0);
-   print_triangle(2);
+	long r;
+	int s;
+	r = 612852475143;
+	while (r % 2 == 0)
+	       r /= 2;
+	for (s = 3; s < r 
     return (0);
 }

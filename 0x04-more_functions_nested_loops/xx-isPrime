@@ -1,0 +1,15 @@
+/**
+ * mul -Entry point
+ * @a : num1
+ * @b : num2
+ * Description: check if uper or no
+ * Return: 0
+ */
+#include"main.h"
+bool  mul(int a, int b)
+{
+	int s;
+
+	s = a * b;
+	return (s);
+}
