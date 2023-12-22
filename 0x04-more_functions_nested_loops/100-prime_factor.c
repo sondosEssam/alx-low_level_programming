@@ -17,9 +17,9 @@ int main(void)
 	square = sqrt(r);
 	for (min = 3; min < square; min += 2)
 	{
-	if (r % min == 0)
-		max = r / min;
+		if (r % min == 0)
+			max = r / min;
 	}
-	printf("%ld\n", max);	
-    return (0);
+	printf("%ld\n", max);
+	return (0);
 }
