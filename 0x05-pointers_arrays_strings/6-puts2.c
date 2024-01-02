@@ -8,7 +8,11 @@
 #include"main.h"
 void puts2(char *str)
 {
-	while (*str != 0)
+	char *rev = str;
+
+	while (*rev != 0)
+		rev++;
+	while (str < rev)
 	{
 		_putchar(*str);
 		str += 2;
