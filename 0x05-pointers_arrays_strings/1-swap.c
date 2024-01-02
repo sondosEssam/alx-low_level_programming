@@ -3,7 +3,7 @@
  *
  * Description: this function swaps two integers
  * @a: first num
- * @b: second num 
+ * @b: second num
  * Return : (void)
  */
 #include"main.h"
