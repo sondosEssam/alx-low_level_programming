@@ -11,7 +11,6 @@ int _atoi(char *s)
 	int i = 1;
 	int num = 0;
 	int countneg = 0;
-	int countpositve = 0;
 	char *rev = s;
 
 	while (*rev != 0)
@@ -23,13 +22,11 @@ int _atoi(char *s)
 			num += (*(rev) - 48) * i;
 			i *= 10;
 		}
-		else if (*rev == '+')
-			countpositve++;
 		else if (*rev == '-')
 			countneg++;
 		rev--;
 	}
-	if (countneg > countpositve)
+	if (countneg % 2 != 0)
 	num *= -1;
 	return (num);
 }
