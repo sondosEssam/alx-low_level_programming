@@ -7,11 +7,11 @@
  * Return: address of dest
  */
 #include"main.h"
-void char *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	char *tmp = dest;
 
-	while (*str != 0)
+	while (*src != 0)
 	{
 		*tmp = *src;
 		tmp++;
