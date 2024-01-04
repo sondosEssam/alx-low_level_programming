@@ -15,11 +15,9 @@ void print_arr ( int *a , int n )
 }
 int main(void)
 {
-	int a [] = { 1, 2,3,4,5,6,7,8,9,10};
-	int n = sizeof(a)/sizeof(int);
-	print_arr(a,n);
-	reverse_array(a,n);
-	print_arr(a,n);
+char a[] = "look it up!";
+string_toupper(a);
+printf("%s", a);
     
     return (0);
 }
