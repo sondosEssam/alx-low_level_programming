@@ -6,13 +6,20 @@
  *
  * Return: Always 0.
  */
+void print_arr ( int *a , int n )
+{
+	int i  ; 
+	for ( i =0 ; i< n ; i++)
+		printf("%d, ", a[i]);
+	putchar('\n');
+}
 int main(void)
 {
-    char s1[] = "Hello";
-    char s2[] = "World!";
-
-    printf("%d\n", _strcmp(s1, s2));
-    printf("%d\n", _strcmp(s2, s1));
-    printf("%d\n", _strcmp(s1, s1));
+	int a [] = { 1, 2,3,4,5,6,7,8,9,10};
+	int n = sizeof(a)/sizeof(int);
+	print_arr(a,n);
+	reverse_array(a,n);
+	print_arr(a,n);
+    
     return (0);
 }
