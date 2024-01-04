@@ -9,12 +9,11 @@ char *leet(char *n)
 	int i;
 	int final = 0;
 	int j;
-
-	while (*(n + final) != 0)
-		final++;
 	char chars [] = {'a', 'e', 'o', 't', 'l'};
 	char ints [] = { '4', '3', '0', '7', '1' };
 
+	while (*(n + final) != 0)
+		final++;
 	for (i = 0; i < final; i++)
 	{
 		for (j = 0 ; j < 5 ; j++)
