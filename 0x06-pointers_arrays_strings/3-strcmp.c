@@ -1,5 +1,5 @@
 /**
-* _strncmp -Function that concancate two strings
+* _strcmp - Function that concancate two strings
 * @s1: second string
 * @s2: first string
 * Return: integer represting if the two strings are equal or not
