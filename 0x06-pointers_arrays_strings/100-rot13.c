@@ -1,12 +1,12 @@
 /**
-* _strncpy -Function that concancate two strings
+* rot13 -Function that concancate two strings
 * @dest: second string
 * @src: first string
 * @n: no of bytes
 * Return: pointer to the concanetated word
 */
 #include"main.h"
-char *_strncpy(char *dest, char *src, int n)
+char *rot13(char *n)
 {
 	int tmp = 0;
 
