@@ -1,17 +1,37 @@
 /**
- * print_numbers -Entry point
- *
- * Description: print nums from 0 to 9
- * Return: 0
- */
+ * print_number - function to print numbers
+ * @n: the number meant to be printed
+ * Return: void
+*/
 #include"main.h"
-void print_numbers(void)
+void print_number(int n)
 {
-	int i;
+	int r;
+	int siz = 0;
+	int q;
+	int mul = 1;
 
-	for (i = 0; i <= 9; i++)
+	if (n < 0)
 	{
-		_putchar(i + 48);
+		_putchar('-');
+		n = n * -1;
 	}
-	_putchar('\n');
+	r = n;
+	while (r / 10  != 0)
+	{
+		siz++;
+		r /= 10;
+	}
+	while (siz != 0)
+	{
+		r = siz;
+		while (r--)
+			mul *= 10;
+		q = (int)n / mul;
+		_putchar(q + '0');
+		n %= (int)mul;
+		siz--;
+		mul = 1;
+	}
+	_putchar(n + '0');
 }

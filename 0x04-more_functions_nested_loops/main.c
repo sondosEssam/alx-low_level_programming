@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include"main.h"
 /**
  * main - check the code
  *
@@ -7,11 +7,8 @@
  */
 int main(void)
 {
-	long r;
-	int s;
-	r = 612852475143;
-	while (r % 2 == 0)
-	       r /= 2;
-	for (s = 3; s < r 
+	print_numbers();
+	//print_most_numbers();
+	//print_most_numbers();
     return (0);
 }
