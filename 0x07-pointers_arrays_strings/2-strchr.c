@@ -1,8 +1,8 @@
 /**
- * _strchr - Function to do tehe for loop job
- * @s: the dewsniation
- * @c: the source
- * Return: charcter
+ * _strchr - search for the 1st occurance of a char
+ * @s: the string
+ * @c: charachter to search for
+ * Return: char pointer
 */
 #include"main.h"
 char *_strchr(char *s, char c)
@@ -12,8 +12,8 @@ char *_strchr(char *s, char c)
 	while (tmp != 0)
 	{
 		if (*tmp == c)
-			break;
+			return (tmp);
 		tmp++;
 	}
-	return (tmp);
+	return ('\0');
 }
