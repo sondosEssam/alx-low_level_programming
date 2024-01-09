@@ -7,16 +7,12 @@
 #include<stdio.h>
 void print_chessboard(char (*a)[8])
 {
-	int j = 0;
-
-	while (a != 0)
+	for (int i = 0; i < 8; i++)
 	{
-		for (j = 0; j < 8; j++)
+		for (int j = 0; j < 8; j++)
 		{
-			//if ((tmp[j] >=97 && tmp[j] <= 122) || (tmp[j] >=65 && tmp[j] <=91))
-				putchar(*a[j]);
+			printf("%c ", a[i][j]);
 		}
-		a += 1;
-	} 
-	
+		printf("\n");
+	}
 }

@@ -1,33 +1,23 @@
-char *_strchr(char *s, char c)
-{
-	int i;
-
-	for (i = 0; s[i] >= '\0'; i++)
-		if (s[i] == c)
-			return (s + i);
-
-	return ('\0');
-}
-
-#include <stdio.h>
-
-
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+ * print_chessboard - Function to do tehe for loop job
+ * @a: the dewsniation
+ * Return: void
+*/
+#include"main.h"
+#include<stdio.h>
+void print_chessboard(char (*a)[8])
 {
-   char *s = "hello";
-    char *f;
+	int j = 0;
+	char (*ptr)[8] = a;
 
-    f = _strchr(s, 'l');
-
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
-    
-    return (0);
+	while (*ptr != 0)
+	{
+		j = 0;
+		while (ptr[j] != 0)
+		{
+				printf("%c",*ptr[j]);
+				j++;
+		}
+		ptr++;
+	} 
 }
