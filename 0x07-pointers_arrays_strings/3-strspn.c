@@ -7,19 +7,21 @@
 #include"main.h"
 unsigned int _strspn(char *s, char *accept)
 {
-	int siz = 0;
-	int i;
+	int i = 0;
 	int j;
 
 	while (s[i] != '\0')
 	{
+		j = 0;
 		while (accept[j] != '\0')
 		{
-			siz++;
-
+			if (s[i] == accept[j])
+				break;
+			j++;
+			if (accept[j] == '\0')
+				return (i);
 		}
-		
+		i++;
 	}
-
-	return (siz);
+	return (i);
 }
