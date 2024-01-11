@@ -26,7 +26,7 @@ int endi(char *s, int i)
 	return (endi(s + 1, i + 1));
 }
 /**
- * is_prime_number - function that prints a string, followed by a new line
+ * is_palindrome - function that prints a string, followed by a new line
  * @s: string to be printed
  * Return: void
 */
