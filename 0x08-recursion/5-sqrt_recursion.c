@@ -12,7 +12,6 @@ int _divi(int n, int val)
 		return (val);
 	else if (n / val < val || (n / val == val && n % val != 0))
 		return (-1);
-
 	else
 	return (_divi(n, val + 1));
 }
