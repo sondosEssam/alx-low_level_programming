@@ -7,23 +7,15 @@
  */
 int main(void)
 {
-   int r;
+     int r;
 
-    r = is_prime_number(1);
-    printf("%d\n", r);
-    r = is_prime_number(1024);
-    printf("%d\n", r);
-    r = is_prime_number(16);
-    printf("%d\n", r);
-    r = is_prime_number(17);
-    printf("%d\n", r);
-    r = is_prime_number(25);
-    printf("%d\n", r);
-    r = is_prime_number(-1);
-    printf("%d\n", r);
-    r = is_prime_number(113);
-    printf("%d\n", r);
-    r = is_prime_number(7919);
-    printf("%d\n", r);
+    r = is_palindrome("level");
+    printf("\n%d\n", r);
+    r = is_palindrome("redder");
+    printf("\n%d\n", r);
+    r = is_palindrome("test");
+    printf("\n%d\n", r);
+    r = is_palindrome("step on no pets");
+    printf("\n%d\n", r);
     return (0);
 }
