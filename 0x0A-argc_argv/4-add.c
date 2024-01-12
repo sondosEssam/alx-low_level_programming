@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
 {
 	int um = 0;
 	int i;
-	char s;
 
 	if (argc < 2)
 	{
@@ -20,10 +19,9 @@ int main(int argc, char *argv[])
 	}
 	for (i = 1; i < argc; i++)
 	{
-		s = *argv[i];
-		if (s == '0')
+		if (*argv[i] == '0')
 			continue;
-		else if (atoi(s) == 0)
+		else if (atoi(argv[i]) == 0)
 		{
 			printf("Error\n");
 			return (1);
