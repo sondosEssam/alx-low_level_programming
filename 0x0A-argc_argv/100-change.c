@@ -24,16 +24,14 @@ int main(int argc, char *argv[])
 		return (printf("0\n"), 0);
 	while (num > 0)
 	{
-		i = 0;
-		while (j[i] >= 1)
+		for (i = 0; i < 5; i++)
 		{
-			if (num % j[i] == 0)
+			if (num >= j[i])
 			{
 				um += 1;
 				num -= j[i];
 				break;
 			}
-			i++;
 		}
 	}
 	printf("%d\n", um);
