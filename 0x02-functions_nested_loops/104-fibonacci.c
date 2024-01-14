@@ -8,10 +8,10 @@
 #include<stdio.h>
 int main(void)
 {
-	long prev;
-	long curr;
+	unsigned long prev;
+	unsigned long curr;
 	int c;
-	long next;
+	unsigned long next;
 
 	prev = 1;
 	curr = 2;
