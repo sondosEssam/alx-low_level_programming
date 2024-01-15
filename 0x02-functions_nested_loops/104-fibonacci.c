@@ -8,19 +8,19 @@
 #include<stdio.h>
 int main(void)
 {
-	unsigned long prev;
-	unsigned long curr;
+	unsigned long int prev;
+	unsigned long int curr;
 	int c;
 	unsigned long next;
 
 	prev = 1;
 	curr = 2;
-	printf("%ld", prev);
-	printf(", %ld", curr);
+	printf("%lu", prev);
+	printf(", %lu", curr);
 	for (c = 1; c <= 96; c++)
 	{
+		printf(", %lu", curr + prev);
 		next = curr + prev;
-		printf(", %ld", next);
 		prev = curr;
 		curr = next;
 	}
