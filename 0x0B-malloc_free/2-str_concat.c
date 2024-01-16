@@ -1,11 +1,12 @@
 #include"main.h"
 #include<stdlib.h>
 /**
- * _strdup - function to create an array
- * @str: size of the array
+ * str_concat - function to create an array
+ * @s1: size of the array
+ * @s2: string2
  * Return: pointeer
 */
-char *_strdup(char *str)
+char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
 	int i = 0;
@@ -14,7 +15,7 @@ char *_strdup(char *str)
 		return ('\0');
 	while (str[i] != '\0')
 		i++;
-	ptr = malloc(sizeof(char) * (i + 1));
+	ptr = malloc((i));
 	if (ptr == NULL)
 		return ('\0');
 	i = 0;
