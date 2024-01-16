@@ -8,13 +8,13 @@
 char *_strdup(char *str)
 {
 	char *ptr;
-	int i;
+	int i =0;
 
 	if (str == NULL)
 		return ('\0');
 	while (str[i] != '\0')
 		i++;
-	ptr = malloc((i - 1));
+	ptr = malloc((i));
 	if (ptr == NULL)
 		return ('\0');
 	i = 0;
@@ -35,7 +35,7 @@ int main(void)
 {
     char *s;
 
-    s = _strdup("Holberton School!");
+    s = _strdup("");
     if (s == NULL)
     {
         printf("failed to allocate memory\n");
