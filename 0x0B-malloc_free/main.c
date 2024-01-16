@@ -1,12 +1,14 @@
-#include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-
+#include<stdio.h>
+#include<stdlib.h>
+#include"main.h"
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
- */
+ * str_concat - function to create an array
+ * @s1: size of the array
+ * @s2: string2
+ * Return: pointeer
+*/
+
+
 int main(void)
 {
     char *s;
