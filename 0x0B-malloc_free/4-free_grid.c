@@ -1,4 +1,3 @@
-#include"main.h"
 #include<stdlib.h>
 #include<string.h>
 /**
@@ -16,7 +15,6 @@ void free_grid(int **grid, int height)
 	{
 		ptr = grid[j];
 		free(ptr);
-		free(grid);
 		ptr = NULL;
 	}
 	free(grid);
