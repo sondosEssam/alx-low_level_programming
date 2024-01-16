@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,30 +10,6 @@
  *
  * Return: Nothing.
  */
-
-/**
- * alloc_grid - function to create an array
- * @width: size of the array
- * @height: string2
- * Return: pointeer
-*/
-/*
-int **alloc_grid(int width, int height)
-{
-	int i;
-	int j;
-	int **ptr = malloc(sizeof(int) * width * height);
-
-	if (ptr == NULL)
-		return (NULL);
-	for (i = 0; i < height; i++)
-		for(j = 0; j < width; j++)
-			ptr[i][j] = 0;
-	
-	return (ptr);
-}
-*/
-
 void print_grid(int **grid, int width, int height)
 {
     int w;
@@ -67,9 +43,11 @@ int main(void)
     {
         return (1);
     }
-    print_grid(grid, 0, 0);
+    print_grid(grid, 6, 4);
     printf("\n");
-    grid[0][0] = 9;
-    print_grid(grid, 0, 0);
+    grid[0][3] = 98;
+    grid[3][4] = 402;
+    print_grid(grid, 6, 4);
+    free_grid(grid, 4);
     return (0);
 }
