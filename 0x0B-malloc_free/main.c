@@ -16,18 +16,18 @@
  * @c: chars inside the array
  * Return: pointeer
 */
-char *create_array(unsigned int size, char c)
-{
-	char *ptr;
+// char *create_array(unsigned int size, char c)
+// {
+// 	char *ptr;
 
-	if (size == 0)
-		return ('\0');
-	ptr = malloc(size);
-	while (--size)
-		ptr[size] = c;
-	*ptr = c;
-	return (ptr);
-}
+// 	if (size == 0)
+// 		return ('\0');
+// 	ptr = malloc(size);
+// 	while (--size)
+// 		ptr[size] = c;
+// 	*ptr = c;
+// 	return (ptr);
+// }
 void simple_print_buffer(char *buffer, unsigned int size)
 {
     unsigned int i;
