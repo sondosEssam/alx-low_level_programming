@@ -67,10 +67,9 @@ int main(void)
     {
         return (1);
     }
-    print_grid(grid, 6, 4);
+    print_grid(grid, 0, 0);
     printf("\n");
-    grid[0][3] = 98;
-    grid[3][4] = 402;
-    print_grid(grid, 6, 4);
+    grid[0][0] = 9;
+    print_grid(grid, 0, 0);
     return (0);
 }
