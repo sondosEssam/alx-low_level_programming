@@ -9,7 +9,7 @@
 */
 char *argstostr(int ac, char **av)
 {
-	char *ptr = malloc(sizeof(int));
+	char *ptr = malloc(sizeof(char));
 	char *tmp;
 	int j = 0, pt = 0;
 	int i = 0;
@@ -20,7 +20,7 @@ char *argstostr(int ac, char **av)
 	{
 		i += strlen(av[j]) + 1;
 		tmp = av[j];
-		ptr = realloc(ptr, sizeof(int) * i);
+		ptr = realloc(ptr, sizeof(char) * i);
 		if (ptr == NULL)
 			return (NULL);
 		while (*tmp != '\0')
