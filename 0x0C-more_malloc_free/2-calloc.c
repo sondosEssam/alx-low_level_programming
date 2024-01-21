@@ -6,6 +6,7 @@
 */
 #include"main.h"
 #include<stdlib.h>
+#include<string.h>
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	size_t total_size = nmemb * size;
