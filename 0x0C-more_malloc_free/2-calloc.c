@@ -10,8 +10,11 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	size_t total_size = nmemb * size;
-	void *allocated_memory = malloc(total_size);
+	void *allocated_memory;
 
+	if (size == 0 || nmemb == 0)
+		return (NULL);
+	allocated_memory = malloc(total_size);
 	if (allocated_memory != NULL)
 	{
 		memset(allocated_memory, 0, total_size);
