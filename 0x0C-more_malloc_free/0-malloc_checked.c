@@ -4,8 +4,6 @@
 * Return: pointer
 */
 #include"main.h"
-#include<stdlib.h>
-#include<string.h>
 void *malloc_checked(unsigned int b)
 {
 	void *ptr = malloc(b);
