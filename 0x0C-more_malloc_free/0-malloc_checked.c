@@ -6,7 +6,7 @@
 #include"main.h"
 void *malloc_checked(unsigned int b)
 {
-	void *ptr = malloc(b);
+	int *ptr = malloc(b);
 
 	if (ptr == NULL)
 		exit(98);
