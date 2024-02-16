@@ -5,7 +5,7 @@
  * @head: head of the list
  * Return: no of nodes
 */
-int sum_listint(listint_t *head);
+int sum_listint(listint_t *head)
 {
 	const listint_t *new_node;
 	int sum = 0;
