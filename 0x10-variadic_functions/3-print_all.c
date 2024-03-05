@@ -8,16 +8,15 @@
 void print_all(const char *const format, ...)
 {
 	va_list args;
-	int i = 0, num = 0;
+	int i = 0, num = 0, flag = 0;
 	char *string = NULL;
 	double floati;
-	int flag = 0;
 
 	if (format == NULL)
-		{
-			printf("\n");
-			return;
-		}
+	{
+		printf("\n");
+		return;
+	}
 	va_start(args, format);
 	while (format[i] != '\0')
 	{
@@ -25,35 +24,22 @@ void print_all(const char *const format, ...)
 		switch (format[i])
 		{
 		case ('c'):
-		{
-			num = va_arg(args, int);
-			printf("%c", num);
+			num = va_arg(args, int), printf("%c", num);
 			break;
-		}
 		case ('i'):
-		{
-			num = va_arg(args, int);
-			printf("%d", num);
+			num = va_arg(args, int), printf("%d", num);
 			break;
-		}
 		case ('f'):
-		{
-			floati = va_arg(args, double);
-			printf("%f", floati);
+			floati = va_arg(args, double), printf("%f", floati);
 			break;
-		}
 		case ('s'):
-		{
 			string = va_arg(args, char *);
-				string == NULL ? string =  "(nil)" : string;
+			string == NULL ? string = "(nil)" : string;
 			printf("%s", string);
 			break;
-		}
 		default:
-		{
 			flag = 1;
 			break;
-		}
 		}
 		if (i != (int)(strlen(format) - 1) && flag != 1)
 			printf(", ");
