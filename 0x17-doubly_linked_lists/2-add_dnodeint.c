@@ -9,7 +9,7 @@
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *curr = malloc(sizeof(int));
+	dlistint_t *curr = malloc(sizeof(dlistint_t));
 
 	if (curr == NULL || head == NULL)
 		return (NULL);
